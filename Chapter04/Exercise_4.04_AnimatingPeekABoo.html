@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peek a boo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js">
+    </script>
+</head>
+<body>
+    <button id="peek">Peek...</button>
+    <h1 id="aboo" style="display: none;">...a-boo</h1>
+    <script>
+        const peekButton = $('#peek');
+        const abooHeadline = $('#aboo');
+        peekButton.on('click', function() {
+            abooHeadline.fadeToggle();
+        })
+    </script>
+</body>
+</html>
